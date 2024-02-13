@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Cocktails By Ingredient</title>
+</head>
+<body>
+<h1>Cocktails By Ingredient</h1>
+<p>Showing cocktails containing <span th:text="${ingredient}"></span>:</p>
+
+<ul>
+    <li th:each="cocktail : ${cocktails}">
+        <span th:text="${cocktail.name}"></span> -
+        <span th:text="${cocktail.ingredients.join(', ')}"></span>
+    </li>
+</ul>
+</body>
+</html>

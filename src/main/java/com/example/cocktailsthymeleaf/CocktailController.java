@@ -27,4 +27,20 @@ public class CocktailController {
         model.addAttribute("cocktails", cocktails);
         return "cocktails";
     }
+
+
+/*
+    public String getCocktailsByIngredient(@RequestParam String ingredientm Model model){
+        Cocktail selectedCocktail = null;
+        if (!cocktails.isEmpty()) {
+            selectedCocktail = cocktails.get(0);
+
+        }
+
+        model.addAttribute("selectedCocktail", selectedCocktail);
+        return "cocktailsByIngredient";
+    }
+
+ */
+
 }
